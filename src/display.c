@@ -24,7 +24,9 @@ void update_display_with_time(int time_left) {
 void alert() {
     vibes_short_pulse();
     TOGGLE(light_enabled);
-    light_enable(light_enabled);
+    // XXX Need to figure out how to do this in a way that doesn't cause the
+    // light to just stay on.
+    //light_enable(light_enabled);
 }
 
 void warning() {
